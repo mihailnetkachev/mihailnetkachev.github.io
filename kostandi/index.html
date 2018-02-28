@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Отель на Констанди</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+	<header class="header">
+		<nav class="header__navigation">
+			<a href="#" class="header__logo-link">
+				<img src="./img/logo-icon.svg" alt="Company's logo" class="header__logo-icon">
+				<h1 class="header__logo-title js-header__logo-title undisplayed">
+					<span class="block">Мини-отель</span>
+					<span class="block">на Костанди</span>
+				</h1>
+			</a>
+			<a href="#" class="header__menu-button js-header__menu-button my-hamburger undisplayed">
+				<span class="line-top"></span>
+				<span class="line-middle"></span>
+				<span class="line-bottom"></span>
+			</a>
+			<ul class="header__menu-list js-header__menu-list undisplayed">
+				<li class="header__menu-item">
+					<a href="#" id="services-link" class="header__menu-link">Сервис</a>
+				</li>
+				<li class="header__menu-item">
+					<a href="#" id="about-link" class="header__menu-link">О нас</a>
+				</li>
+				<li class="header__menu-item">
+					<a href="#" id="offers-link" class="header__menu-link">Апартаменты</a>
+				</li>
+				<li class="header__menu-item">
+					<a href="#" id="reviews-link" class="header__menu-link">Отзывы</a>
+				</li>
+				<li class="header__menu-item">
+					<a href="#" id="contacts-link" class="header__menu-link">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="main">
+		<section class="top-banner">
+			<div class="wrapper">
+				<div class="top-banner__title-wrapper">
+					<div class="top-banner__sub-title">Туризм с комфортом</div>
+					<h2 class="top-banner__title">
+						<span class="block">Апартаменты</span>
+						<span class="block">в Одессе</span>
+					</h2>
+					<a href="#" class="top-banner__title-button js-top-banner__title-button">
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+			<ul class="top-banner__social-list">
+				<li class="top-banner__social-item">
+					<a href="#" class="top-banner__social-link">
+						<i class="fa fa-skype" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="top-banner__social-item">
+					<a href="#" class="top-banner__social-link">
+						<i class="fa fa-facebook-official" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="top-banner__social-item">
+					<a href="#" class="top-banner__social-link">
+						<i class="fa fa-vk" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section id="services" class="services js-key-section">
+			<div class="wrapper">
+				<div class="section-title-wrapper">
+					<div class="section-sub-title">В чём преимущества нашего отеля?</div>
+					<h2 class="section-title">Сервис</h2>
+				</div>
+				<ul class="services__main-list">
+					<li class="services__main-list-item">
+						<div class="services__item-icon-wrapper">
+							<i class="fa fa-train" aria-hidden="true"></i>
+						</div>
+						<h3 class="services__item-title">Транспорт</h3>
+						<p class="services__item-text">
+							Наш отель расположен в непосредственной близости от транспортной развязки, что позволяет посетителям беспрепрятственно перемещаться по всему городу.
+						</p>
+					</li>
+					<li class="services__main-list-item">
+						<div class="services__item-icon-wrapper">
+							<i class="fa fa-ship" aria-hidden="true"></i>
+						</div>
+						<h3 class="services__item-title">Близость к морю</h3>
+						<p class="services__item-text">
+							Береговая линия находится в зоне пешей доступности - это позволит Вам провести досуг с максимум возможностей, но отдыхать в абсолютной тишине.
+						</p>
+					</li>
+					<li class="services__main-list-item">
+						<div class="services__item-icon-wrapper">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						</div>
+						<h3 class="services__item-title">Магазины</h3>
+						<p class="services__item-text">
+							В пределах квартала нашего отеля имеется множество магазинов и торговых центров, а также кафе, ресторанов и других объектов городской инфраструктуры.
+						</p>
+					</li>
+				</ul>			
+			</div>
+			<div class="services__sub-list-wrapper">
+				<ul class="services__sub-list services__sub-list-js owl-carousel">
+					<li class="services__sub-list-item">
+						<div class="services__item-icon-wrapper">
+							<i class="fa fa-wifi" aria-hidden="true"></i>
+						</div>
+						<h3 class="services__item-title">
+							<span class="block">Бесплатный</span>
+							<span class="block">Wi-Fi</span>
+						</h3>
+					</li>
+					<li class="services__sub-list-item">
+						<div class="services__item-icon-wrapper">
+							<i class="fa fa-product-hunt" aria-hidden="true"></i>
+						</div>
+						<h3 class="services__item-title">
+							<span class="block">Бесплатная</span>
+							<span class="block">парковка</span>
+						</h3>
+					</li>
+					<li class="services__sub-list-item">
+						<div class="services__item-icon-wrapper">
+							<i class="fa fa-plane" aria-hidden="true"></i>
+						</div>
+						<h3 class="services__item-title">
+							<span class="block">Трансфер</span>
+							<span class="block">от/до аэропорта</span>
+						</h3>
+					</li>
+					<li class="services__sub-list-item">
+						<div class="services__item-icon-wrapper">
+							<i class="fa fa-child" aria-hidden="true"></i>
+						</div>
+						<h3 class="services__item-title">
+							<span class="block">Семейные</span>
+							<span class="block">номера</span>
+						</h3>
+					</li>
+					<li class="services__sub-list-item">
+						<div class="services__item-icon-wrapper">
+							<i class="fa fa-paw" aria-hidden="true"></i>
+						</div>
+						<h3 class="services__item-title">
+							<span class="block">Домашние животные</span>
+							<span class="block"></span>
+						</h3>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="about" class="about js-key-section">
+			<div class="wrapper">
+				<div class="section-title-wrapper">
+					<div class="section-sub-title">Кто мы и где находимся?</div>
+					<h2 class="section-title">О нас</h2>
+				</div>
+				<div class="about__text">
+					<p>
+						В числе удобств гостиная и обеденная зона. В некоторых апартаментах к услугам гостей терраса и/или балкон. Кухня оснащена духовкой, микроволновой печью, холодильником, плитой и чайником. Собственная ванная комната укомплектована бесплатными туалетно-косметическими принадлежностями. Гостям предоставляются полотенца. В мини-отеле «На улице Костанди» можно пользоваться принадлежностями для барбекю. В распоряжении гостей бар.
+					</p>
+				</div>
+			</div>
+			<div class="about__map-wrapper">
+				<div id="map" class="about__map"></div>
+				<div class="about__map-text">
+					<p>
+						До пляжа можно дойти всего за 11 минут. Мини-отель «На улице Костанди» с бесплатным Wi-Fi и садом расположен в Одессе. Расстояние до Одесского археологического музея составляет 9 км. На территории обустроена бесплатная частная парковка.
+					</p>
+					<p>
+						Одесский театр оперы и балета находится в 9 км от мини-отеля «На улице Костанди». Расстояние до международного аэропорта Одессы составляет 5 км.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="offers" class="offers js-key-section">
+			<div class="wrapper">
+				<div class="section-title-wrapper">
+					<div class="section-sub-title">Что мы предлагаем?</div>
+					<h2 class="section-title">Апартаменты</h2>
+				</div>
+			</div>
+		</section>
+		<section id="reviews" class="reviews js-key-section">
+			<div class="wrapper">
+				<ul class="reviews__list reviews__list-js owl-carousel">
+					<li class="reviews__list-item">
+						<div class="reviews__item-img-wrapper">
+							<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+						</div>
+						<div class="reviews__item-info">
+							<p class="reviews__item-text">
+								Очень уютный мини-отель с красивым цветущим внутренним двориком, качелей и батутом для детворы! Номер свежий, красивый и очень комфортный! Все необходимое в номере! Все отлично.
+							</p>
+							<div class="reviews__item-author">Анна</div>
+						</div>
+					</li>
+					<li class="reviews__list-item">
+						<div class="reviews__item-img-wrapper">
+							<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+						</div>
+						<div class="reviews__item-info">
+							<p class="reviews__item-text">
+								Очень уютный мини-отель с красивым цветущим внутренним двориком, качелей и батутом для детворы! Номер свежий, красивый и очень комфортный! Все необходимое в номере! Все отлично.
+							</p>
+							<div class="reviews__item-author">Анна</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="contacts" class="contacts js-key-section">
+			<div class="wrapper">
+				<div class="section-title-wrapper">
+					<div class="section-sub-title">Как с нами связаться?</div>
+					<h2 class="section-title">Контакты</h2>
+				</div>
+				<form action="#" class="contacts__form">
+					<input type="text" class="contacts__form-name contacts__form-item" placeholder="Ваше имя">
+					<input type="email" class="contacts__form-email contacts__form-item" placeholder="Ваш e-mail">
+					 <textarea name="textarea" rows="4" class="contacs__form-message contacts__form-item" style="overflow: hidden"></textarea>
+					<input type="button" class="contacts__form-button" value="Отправить">
+				</form>
+			</div>
+		</section>
+	</main>
+
+	
+
+
+
+	<script>
+		function initMap() {
+
+			function addMarker(options) {
+				var marker = new google.maps.Marker({
+					position: options.coordinates,
+					map: myMap
+				});
+
+				if (options.image) {
+					marker.setIcon(options.image);
+				}
+
+				if (options.info) {
+					var infoWindow = new google.maps.InfoWindow({
+						content: options.info
+					});
+
+					marker.addListener('click', function() {
+						infoWindow.open(myMap, marker);
+					});
+				}
+			}
+
+			var element = document.getElementById('map');
+
+			var options = {
+				zoom: 11,
+				center: {lat: 46.424229, lng: 30.753449}
+			};
+
+			var myMap = new google.maps.Map(element, options);
+
+			var markers = [
+				{
+					coordinates: {lat: 46.405866, lng: 30.732981},
+					// image: './img/logo-icon.png',
+					info: '<span>Отель на Костанди</span>'
+				},
+				{
+					coordinates: {lat: 46.4298271, lng: 30.6774409},
+					info: '<span>Аэропорт</span>'
+				}
+			]
+
+			markers.forEach(function (elem) {
+				addMarker(elem);
+			})
+
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGtqWIX1pLK79vDaLZ17qKzx78PbLCKUg&callback=initMap"></script>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+
+</body>
+</html>
