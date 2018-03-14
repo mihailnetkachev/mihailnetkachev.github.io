@@ -24,189 +24,212 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+<!-- 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style> -->
 
 </head>
 
 <body>
 
 	<header class="header">
-		<div class="wrapper">
-			<a href="#" class="header__logo-link">
-				<h1 class="header__logo-title">MoGo</h1>
+		<nav class="header__navigation">
+			<a href="#" class="header__logoLink">
+				<h1 class="header__logoTitle">MoGo</h1>
 			</a>
-			<nav class="header__navigation">
-				<ul class="header__menu-list">
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">About</a>
-					</li>
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">Service</a>
-					</li>
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">Work</a>
-					</li>
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">Blog</a>
-					</li>
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">Contact</a>
-					</li>
-				</ul>
-				<ul class="header__service-list">
-					<li class="header__service-item">
-						<a href="#" class="header__service-link">
-							<img src="./img/shopping-cart.svg" class="header__service-link-icon">
-						</a>
-					</li>
-					<li class="header__service-item">
-						<a href="#" class="header__service-link">
-							<img src="./img/magnifying-glass.svg" class="header__service-link-icon">
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>	
+			<a href="#" class="header__menuButton undisplayed">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</a>
+			<ul class="header__menuList">
+				<li class="header__menuItem">
+					<a href="#" class="header__menuLink">About</a>
+				</li>
+				<li class="header__menuItem">
+					<a href="#" class="header__menuLink">Service</a>
+				</li>
+				<li class="header__menuItem">
+					<a href="#" class="header__menuLink">Work</a>
+				</li>
+				<li class="header__menuItem">
+					<a href="#" class="header__menuLink">Blog</a>
+				</li>
+				<li class="header__menuItem">
+					<a href="#" class="header__menuLink">Contacts</a>
+				</li>
+				<li class="header__menuItem header__menuItem__withoutLine">
+					<a href="#" class="header__menuLink">
+						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="header__menuItem header__menuItem__withoutLine">
+					<a href="#" class="header__menuLink">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
 
 	<main class="main">
-		<section class="top-banner">
-			<div class="wrapper">
-				<div class="top-banner__content-wrapper">
-					<div class="section-title-wrapper">
-						<div class="section-sub-title">Creative Template</div>
-						<h2 class="section-title">
+		<section class="topBanner">
+			<div class="topBannerWrapper">
+				<div class="topBanner__contentWrapper">		
+					<div class="sectionTitleContainer">
+						<div class="sectionSubTitle">Creative Template</div>
+						<h2 class="sectionTitle">
 							<span class="block">Welcome</span>
 							<span class="block">to MoGo</span>
 						</h2>
 					</div>
-					<a href="#" class="top-banner__title-button">Learn more</a>
+					<a href="#" class="topBanner__button">Learn more</a>
 				</div>
 			</div>
 		</section>
 		<section class="about">
-			<div class="wrapper">
-				<div class="section-title-wrapper">
-					<div class="section-sub-title">What we do</div>
-					<h2 class="section-title">Story about us</h2>
+			<div class="sectionWrapper">
+				<div class="sectionTitleContainer">
+					<div class="sectionSubTitle">What we do</div>
+					<h2 class="sectionTitle">Story about us</h2>
 				</div>
-				<p class="about__text">
+				<p class="sectionText">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				</p>
-				<ul class="about__gallery-list">
-					<li class="about__gallery-item">
-						<img src="./img/about-img-1.jpg" alt="" class="about__gallery-item-img">
-						<a href="#" class="about__gallery-item-link">
-							<div class="about__gallery-item-content">
-								<img src="./img/about-gallery-icon.svg" alt="" class="about__gallery-item-icon">
-								<h3 class="about__gallery-item-title">Super team</h3>
-							</div>
+				<ul class="about__list">
+					<li class="about__listItem">
+						<picture>
+							<source media="(min-width: 701px)" srcset="./img/aboutImg1-sm.jpg">
+							<source media="(min-width: 480px)" srcset="./img/aboutImg1-md.jpg">
+							<img src="./img/aboutImg1-sm.jpg" alt="Chess game" class="about__itemImg">
+						</picture>
+						<a href="#" class="about__itemLink">
+							<svg class="about__itemIcon iconSVG" viewBox="0 0 40 31">
+								<use xlink:href="./img/icons.svg#users"/>
+							</svg>
+							<h3 class="about__itemTitle">Super team</h3>
 						</a>
 					</li>
-					<li class="about__gallery-item">
-						<img src="./img/about-img-2.jpg" alt="" class="about__gallery-item-img">
-						<a href="#" class="about__gallery-item-link">
-							<div class="about__gallery-item-content">
-								<img src="./img/about-gallery-icon.svg" alt="" class="about__gallery-item-icon">
-								<h3 class="about__gallery-item-title">Super team</h3>
-							</div>
+					<li class="about__listItem">
+						<picture>
+							<source media="(min-width: 701px)" srcset="./img/aboutImg2-sm.jpg">
+							<source media="(min-width: 480px)" srcset="./img/aboutImg2-md.jpg">
+							<img src="./img/aboutImg2-sm.jpg" alt="Chess game" class="about__itemImg">
+						</picture>
+						<a href="#" class="about__itemLink">
+							<svg class="about__itemIcon iconSVG" viewBox="0 0 40 31">
+								<use xlink:href="./img/icons.svg#users"/>
+							</svg>
+							<h3 class="about__itemTitle">Something else</h3>
 						</a>
 					</li>
-					<li class="about__gallery-item">
-						<img src="./img/about-img-3.jpg" alt="" class="about__gallery-item-img">
-						<a href="#" class="about__gallery-item-link">
-							<div class="about__gallery-item-content">
-								<img src="./img/about-gallery-icon.svg" alt="" class="about__gallery-item-icon">
-								<h3 class="about__gallery-item-title">Super team</h3>
-							</div>
+					<li class="about__listItem">
+						<picture>
+							<source media="(min-width: 701px)" srcset="./img/aboutImg3-sm.jpg">
+							<source media="(min-width: 480px)" srcset="./img/aboutImg3-md.jpg">
+							<img src="./img/aboutImg3-sm.jpg" alt="Chess game" class="about__itemImg">
+						</picture>
+						<a href="#" class="about__itemLink">
+							<svg class="about__itemIcon iconSVG" viewBox="0 0 40 31">
+								<use xlink:href="./img/icons.svg#users"/>
+							</svg>
+							<h3 class="about__itemTitle">And more</h3>
 						</a>
 					</li>
 				</ul>
 			</div>
 		</section>
 		<section class="facts">
-			<div class="wrapper">
-				<ul class="facts__list">
-					<li class="facts__item">
-						<div class="facts__item-value">42</div>
-						<h3 class="facts__item-title">Web design projects</h3>
+			<div class="passageWrapper">
+				<ul class="facts__list js-facts__list owl-carousel">
+					<li class="facts__listItem">
+						<div class="facts__itemValue">42</div>
+						<h3 class="facts__itemTitle">Web design projects</h3>
 					</li>
-					<li class="facts__item">
-						<div class="facts__item-value">123</div>
-						<h3 class="facts__item-title">Happy client</h3>
+					<li class="facts__listItem">
+						<div class="facts__itemValue">123</div>
+						<h3 class="facts__itemTitle">Happy client</h3>
 					</li>
-					<li class="facts__item">
-						<div class="facts__item-value">15</div>
-						<h3 class="facts__item-title">Award winner</h3>
+					<li class="facts__listItem">
+						<div class="facts__itemValue">15</div>
+						<h3 class="facts__itemTitle">Award winner</h3>
 					</li>
-					<li class="facts__item">
-						<div class="facts__item-value">99</div>
-						<h3 class="facts__item-title">Cup of coffee</h3>
+					<li class="facts__listItem">
+						<div class="facts__itemValue">99</div>
+						<h3 class="facts__itemTitle">Cup of coffee</h3>
 					</li>
-					<li class="facts__item">
-						<div class="facts__item-value">24</div>
-						<h3 class="facts__item-title">Members</h3>
+					<li class="facts__listItem">
+						<div class="facts__itemValue">24</div>
+						<h3 class="facts__itemTitle">Members</h3>
 					</li>
 				</ul>
 			</div>
 		</section>
 		<section class="services">
-			<div class="wrapper">
-				<div class="section-title-wrapper">
-					<div class="section-sub-title">We work with</div>
-					<h2 class="section-title">Amazing Services</h2>			
+			<div class="sectionWrapper">
+				<div class="sectionTitleContainer">
+					<div class="sectionSubTitle">We work with</div>
+					<h2 class="sectionTitle">Amazing Services</h2>
 				</div>
 				<ul class="services__list">
-					<li class="services__item">
-						<img src="./img/alarm.svg" alt="" class="services__item-icon">
-						<div class="services__item-content">
-							<h3 class="services__item-title">Photography</h3>
-							<p class="services__item-text">
+					<li class="services__listItem">
+						<svg class="services__itemIcon iconSVG" viewBox="0 0 35 35">
+							<use xlink:href="./img/icons.svg#alarm"/>
+						</svg>
+						<div class="services__itemTextWrapper">
+							<h3 class="services__itemTitle">Photography</h3>
+							<p class="services__itemText">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
 							</p>
 						</div>
 					</li>
-					<li class="services__item">
-						<img src="./img/line-graph.svg" alt="" class="services__item-icon">
-						<div class="services__item-content">
-							<h3 class="services__item-title">Web Design</h3>
-							<p class="services__item-text">
+					<li class="services__listItem">
+						<svg class="services__itemIcon iconSVG" viewBox="0 0 35 35">
+							<use xlink:href="./img/icons.svg#line-graph"/>
+						</svg>
+						<div class="services__itemTextWrapper">
+							<h3 class="services__itemTitle">Web Design</h3>
+							<p class="services__itemText">
 								Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
 							</p>
 						</div>
 					</li>
-					<li class="services__item">
-						<img src="./img/computer---ok.svg" alt="" class="services__item-icon">
-						<div class="services__item-content">
-							<h3 class="services__item-title">Creativity</h3>
-							<p class="services__item-text">
+					<li class="services__listItem">
+						<svg class="services__itemIcon iconSVG" viewBox="0 0 35 35">
+							<use xlink:href="./img/icons.svg#computer-ok"/>
+						</svg>
+						<div class="services__itemTextWrapper">
+							<h3 class="services__itemTitle">Creativity</h3>
+							<p class="services__itemText">
 								Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
 							</p>
 						</div>
 					</li>
-					<li class="services__item">
-						<img src="./img/book-2.svg" alt="" class="services__item-icon">
-						<div class="services__item-content">
-							<h3 class="services__item-title">Seo</h3>
-							<p class="services__item-text">
+					<li class="services__listItem">
+						<svg class="services__itemIcon iconSVG" viewBox="0 0 35 35">
+							<use xlink:href="./img/icons.svg#book"/>
+						</svg>
+						<div class="services__itemTextWrapper">
+							<h3 class="services__itemTitle">SEO</h3>
+							<p class="services__itemText">
 								Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
 							</p>
 						</div>
 					</li>
-					<li class="services__item">
-						<img src="./img/home.svg" alt="" class="services__item-icon">
-						<div class="services__item-content">
-							<h3 class="services__item-title">Css/Html</h3>
-							<p class="services__item-text">
+					<li class="services__listItem">
+						<svg class="services__itemIcon iconSVG" viewBox="0 0 35 35">
+							<use xlink:href="./img/icons.svg#home"/>
+						</svg>
+						<div class="services__itemTextWrapper">
+							<h3 class="services__itemTitle">CSS/HTML</h3>
+							<p class="services__itemText">
 								Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
 							</p>
 						</div>
 					</li>
-					<li class="services__item">
-						<img src="./img/image.svg" alt="" class="services__item-icon">
-						<div class="services__item-content">
-							<h3 class="services__item-title">Digital</h3>
-							<p class="services__item-text">
+					<li class="services__listItem">
+						<svg class="services__itemIcon iconSVG" viewBox="0 0 35 35">
+							<use xlink:href="./img/icons.svg#image"/>
+						</svg>
+						<div class="services__itemTextWrapper">
+							<h3 class="services__itemTitle">Digital</h3>
+							<p class="services__itemText">
 								Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
 							</p>
 						</div>
@@ -215,371 +238,428 @@
 			</div>
 		</section>
 		<section class="feature">
-			<div class="wrapper">
-				<div class="section-title-wrapper">
-					<div class="section-sub-title">For all devices</div>
-					<h2 class="section-title">Unique design</h2>			
+			<div class="sectionWrapper">
+				<div class="sectionTitleContainer">
+					<div class="sectionSubTitle">For all devices</div>
+					<h2 class="sectionTitle">Unique design</h2>
+				</div>
+				<div class="feature__imgWrapper">
+					<img src="./img/feature-img-tablet.png" class="feature__img__main">
+					<img src="./img/feature-img-phone.png" class="feature__img__sub">
 				</div>
 			</div>
-			<img src="./img/tablet.png" alt="" class="feature__main-img">
-			<img src="./img/phone.png" alt="" class="feature__sub-img">
 		</section>
-		<section class="services-two">
-			<div class="wrapper">
-				<div class="section-title-wrapper">
-					<div class="section-sub-title">Service</div>
-					<h2 class="section-title">What we do</h2>			
+		<section class="offers">
+			<div class="sectionWrapper">
+				<div class="sectionTitleContainer">
+					<div class="sectionSubTitle">Service</div>
+					<h2 class="sectionTitle">What we do</h2>
 				</div>
-				<p class="services-two__text">
+				<p class="sectionText">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				</p>
+				<div class="offers__contentWrapper">
+					<div class="offers__imgWrapper">
+						<img src="./img/offers-img.jpg" class="offers__img">
+					</div>
+					<ul class="offers__list">
+						<li class="offers__listItem">
+							<a href="#" class="offers__itemTitle js-offers__itemTitle">
+								<svg class="offers__itemIcon iconSVG" viewBox="0 0 35 35">
+									<use xlink:href="./img/icons.svg#picture"/>
+								</svg>
+								Photography
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+							<p class="offers__itemText js-offers__itemText">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</li>
+						<li class="offers__listItem">
+							<a href="#" class="offers__itemTitle js-offers__itemTitle">
+								<svg class="offers__itemIcon iconSVG" viewBox="0 0 35 35">
+									<use xlink:href="./img/icons.svg#equalizer"/>
+								</svg>
+								Creativity
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+							<p class="offers__itemText js-offers__itemText">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</li>
+						<li class="offers__listItem">
+							<a href="#" class="offers__itemTitle js-offers__itemTitle">
+								<svg class="offers__itemIcon iconSVG" viewBox="0 0 35 35">
+									<use xlink:href="./img/icons.svg#bullseye"/>
+								</svg>
+								Web design
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+							<p class="offers__itemText js-offers__itemText">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 		<section class="quotes">
-			<div class="wrapper">
+			<div class="passageWrapper">
 				<ul class="quotes__list js-quotes__list owl-carousel">
-					<li class="quotes__item">
-						<div class="quotes__item-icon-wrapper">
-							<img src="./img/speech.svg" alt="" class="quotes__item-icon">
+					<li class="quotes__listItem">
+						<div class="quotes__itemImgWrapper">
+							<svg class="quotes__itemImg iconSVG" viewBox="0 0 66 64">
+								<use xlink:href="./img/icons.svg#speech"/>
+							</svg>
 						</div>
-						<div class="quotes__item-content">
-							<p class="quotes__item-text">
+						<div class="quotes__itemTextWrapper">
+							<p class="quotes__itemText">
 								“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
 							</p>
-							<div class="quotes__item-author">Jon Doe</div>
+							<div class="quotes__itemTitle">Jon Doe</div>
 						</div>
 					</li>
-					<li class="quotes__item">
-						<div class="quotes__item-icon-wrapper">
-							<img src="./img/speech.svg" alt="" class="quotes__item-icon">
+					<li class="quotes__listItem">						
+						<div class="quotes__itemImgWrapper">
+							<svg class="quotes__itemImg iconSVG" viewBox="0 0 66 64">
+								<use xlink:href="./img/icons.svg#speech"/>
+							</svg>
 						</div>
-						<div class="quotes__item-content">
-							<p class="quotes__item-text">
+						<div class="quotes__itemTextWrapper">
+							<p class="quotes__itemText">
 								“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
 							</p>
-							<div class="quotes__item-author">Jon Doe</div>
+							<div class="quotes__itemTitle">Jon Doe</div>
 						</div>
 					</li>
-					<li class="quotes__item">
-						<div class="quotes__item-icon-wrapper">
-							<img src="./img/speech.svg" alt="" class="quotes__item-icon">
+					<li class="quotes__listItem">
+						<div class="quotes__itemImgWrapper">
+							<svg class="quotes__itemImg iconSVG" viewBox="0 0 66 64">
+								<use xlink:href="./img/icons.svg#speech"/>
+							</svg>
 						</div>
-						<div class="quotes__item-content">
-							<p class="quotes__item-text">
+						<div class="quotes__itemTextWrapper">
+							<p class="quotes__itemText">
 								“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
 							</p>
-							<div class="quotes__item-author">Jon Doe</div>
+							<div class="quotes__itemTitle">Jon Doe</div>
 						</div>
 					</li>
 				</ul>
 			</div>
 		</section>
 		<section class="team">
-			<div class="wrapper">
-				<div class="section-title-wrapper">
-					<div class="section-sub-title">Who we are</div>
-					<h2 class="section-title">Meet our team</h2>			
+			<div class="sectionWrapper">
+				<div class="sectionTitleContainer">
+					<div class="sectionSubTitle">Who we are</div>
+					<h2 class="sectionTitle">Meet our team</h2>
 				</div>
-				<p class="team__text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				<p class="sectionText">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				</p>
 				<ul class="team__list">
-					<li class="team__item">
-						<div class="team__item-img-wrapper">
-							<img src="./img/team-img-1.jpg" alt="" class="team__item-img">
-							<ul class="team__social-list">
-								<li class="team__social-item">
-									<a href="#" class="team__social-link">
-										<i class="fa fa-facebook" aria-hidden="true"></i>
-									</a>
+					<li class="team__listItem">
+						<div class="team__itemImgWrapper">
+							<picture>
+								<source media="(min-width: 701px)" srcset="./img/teamImg1-sm.jpg">
+								<source media="(min-width: 480px)" srcset="./img/teamImg1-md.jpg">
+								<img src="./img/teamImg1-sm.jpg" alt="A man in a shirt" class="team__itemImg">
+							</picture>
+							<!-- <img src="./img/team-img-1.jpg" alt="" class="team__itemImg"> -->
+							<ul class="team__socialList">
+								<li class="team__socialItem">
+									<a href="#" class="team__socialLink"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 								</li>
-								<li class="team__social-item">
-									<a href="#" class="team__social-link">
-										<i class="fa fa-twitter" aria-hidden="true"></i>
-									</a>
+								<li class="team__socialItem">
+									<a href="#" class="team__socialLink"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 								</li>
-								<li class="team__social-item">
-									<a href="#" class="team__social-link">
-										<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-									</a>
+								<li class="team__socialItem">
+									<a href="#" class="team__socialLink"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
 								</li>
-								<li class="team__social-item">
-									<a href="#" class="team__social-link">
-										<i class="fa fa-instagram" aria-hidden="true"></i>
-									</a>
+								<li class="team__socialItem">
+									<a href="#" class="team__socialLink"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 								</li>
 							</ul>
 						</div>
-						<div class="team__item-content">
-							<h3 class="team__item-name">Matthew Dix</h3>
-							<div class="team__item-profession">Graphic Design</div>
-						</div>
+						<h3 class="team__itemTitle">Matthew Dix</h3>
+						<div class="team__itemSubTitle">Graphic Design</div>
 					</li>
-					<li class="team__item">
-						<div class="team__item-img-wrapper">
-							<img src="./img/team-img-2.jpg" alt="" class="team__item-img">
-							<ul class="team__social-list">
-								<li class="team__social-item">
-									<a href="#" class="team__social-link">
-										<i class="fa fa-facebook" aria-hidden="true"></i>
-									</a>
+					<li class="team__listItem">
+						<div class="team__itemImgWrapper">
+							<picture>
+								<source media="(min-width: 701px)" srcset="./img/teamImg2-sm.jpg">
+								<source media="(min-width: 480px)" srcset="./img/teamImg2-md.jpg">
+								<img src="./img/teamImg2-sm.jpg" alt="A man in a shirt" class="team__itemImg">
+							</picture>
+							<ul class="team__socialList">
+								<li class="team__socialItem">
+									<a href="#" class="team__socialLink"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 								</li>
-								<li class="team__social-item">
-									<a href="#" class="team__social-link">
-										<i class="fa fa-twitter" aria-hidden="true"></i>
-									</a>
+								<li class="team__socialItem">
+									<a href="#" class="team__socialLink"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 								</li>
-								<li class="team__social-item">
-									<a href="#" class="team__social-link">
-										<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-									</a>
+								<li class="team__socialItem">
+									<a href="#" class="team__socialLink"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
 								</li>
-								<li class="team__social-item">
-									<a href="#" class="team__social-link">
-										<i class="fa fa-instagram" aria-hidden="true"></i>
-									</a>
+								<li class="team__socialItem">
+									<a href="#" class="team__socialLink"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 								</li>
 							</ul>
 						</div>
-						<div class="team__item-content">
-							<h3 class="team__item-name">Christopher Campbell</h3>
-							<div class="team__item-profession">Branding/UX design</div>
-						</div>
+						<h3 class="team__itemTitle">Christopher Campbell</h3>
+						<div class="team__itemSubTitle">Branding/UX design</div>
 					</li>
-					<li class="team__item">
-						<div class="team__item-img-wrapper">
-							<img src="./img/team-img-3.jpg" alt="" class="team__item-img">
-							<ul class="team__social-list">
-								<li class="team__social-item">
-									<a href="#" class="team__social-link">
-										<i class="fa fa-facebook" aria-hidden="true"></i>
-									</a>
+					<li class="team__listItem">
+						<div class="team__itemImgWrapper">
+							<picture>
+								<source media="(min-width: 701px)" srcset="./img/teamImg3-sm.jpg">
+								<source media="(min-width: 480px)" srcset="./img/teamImg3-md.jpg">
+								<img src="./img/teamImg3-sm.jpg" alt="A man in a shirt" class="team__itemImg">
+							</picture>
+							<ul class="team__socialList">
+								<li class="team__socialItem">
+									<a href="#" class="team__socialLink"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 								</li>
-								<li class="team__social-item">
-									<a href="#" class="team__social-link">
-										<i class="fa fa-twitter" aria-hidden="true"></i>
-									</a>
+								<li class="team__socialItem">
+									<a href="#" class="team__socialLink"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 								</li>
-								<li class="team__social-item">
-									<a href="#" class="team__social-link">
-										<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-									</a>
+								<li class="team__socialItem">
+									<a href="#" class="team__socialLink"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
 								</li>
-								<li class="team__social-item">
-									<a href="#" class="team__social-link">
-										<i class="fa fa-instagram" aria-hidden="true"></i>
-									</a>
+								<li class="team__socialItem">
+									<a href="#" class="team__socialLink"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 								</li>
 							</ul>
 						</div>
-						<div class="team__item-content">
-							<h3 class="team__item-name">Michael Fertig</h3>
-							<div class="team__item-profession">Developer</div>
-						</div>
+						<h3 class="team__itemTitle">Michael Fertig</h3>
+						<div class="team__itemSubTitle">Developer</div>
 					</li>
 				</ul>
 			</div>
 		</section>
-		<!-- <section class="partners">
-			<div class="wrapper">
+		<section class="partners">
+			<div class="passageWrapper">
 				<ul class="partners__list">
-					<li class="partners__item">
-						<a href="#" class="partners__link">
-							<img src="./img/.svg" alt="" class="partners__logo">
+					<li class="partners__listItem">
+						<a href="#" class="partners__itemLink">
+							<svg class="partners__itemImg iconSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+								<use xlink:href="./img/partners-logo.svg#hipster"></use>
+							</svg>
 						</a>
 					</li>
-					<li class="partners__item">
-						<a href="#" class="partners__link">
-							<img src="./img/.svg" alt="" class="partners__logo">
+					<li class="partners__listItem">
+						<a href="#" class="partners__itemLink">
+							<svg class="partners__itemImg iconSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+								<use xlink:href="./img/partners-logo.svg#hatchets"></use>
+							</svg>
 						</a>
 					</li>
-					<li class="partners__item">
-						<a href="#" class="partners__link">
-							<img src="./img/.svg" alt="" class="partners__logo">
+					<li class="partners__listItem">
+						<a href="#" class="partners__itemLink">
+							<svg class="partners__itemImg iconSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+								<use xlink:href="./img/partners-logo.svg#hipster-company"></use>
+							</svg>
 						</a>
 					</li>
-					<li class="partners__item">
-						<a href="#" class="partners__link">
-							<img src="./img/.svg" alt="" class="partners__logo">
+					<li class="partners__listItem">
+						<a href="#" class="partners__itemLink">
+							<svg class="partners__itemImg iconSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+								<use xlink:href="./img/partners-logo.svg#northway"></use>
+							</svg>
 						</a>
 					</li>
-					<li class="partners__item">
-						<a href="#" class="partners__link">
-							<img src="./img/.svg" alt="" class="partners__logo">
+					<li class="partners__listItem">
+						<a href="#" class="partners__itemLink">
+							<svg class="partners__itemImg iconSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+								<use xlink:href="./img/partners-logo.svg#rock-and-roll"></use>
+							</svg>
 						</a>
 					</li>
-					<li class="partners__item">
-						<a href="#" class="partners__link">
-							<img src="./img/.svg" alt="" class="partners__logo">
+					<li class="partners__listItem">
+						<a href="#" class="partners__itemLink">
+							<svg class="partners__itemImg iconSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+								<use xlink:href="./img/partners-logo.svg#mountain"></use>
+							</svg>
 						</a>
 					</li>
 				</ul>
 			</div>
-		</section> -->
-		<section class="work">
-			<div class="wrapper">
-				<div class="section-title-wrapper">
-					<div class="section-sub-title">What we do</div>
-					<h2 class="section-title">Some of our work</h2>			
+		</section>
+		<section class="works">
+			<div class="sectionWrapper">
+				<div class="sectionTitleContainer">
+					<div class="sectionSubTitle">What we do</div>
+					<h2 class="sectionTitle">Some of our work</h2>
 				</div>
-				<p class="work__text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				<p class="sectionText">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				</p>
-				
 			</div>
-			<ul class="work__list">
-					<li class="work__item">
-						<a href="#" class="work__link">
-							<img src="./img/work-1.jpg" alt="" class="work__img">
-							<div class="work__content">
-								<img src="./img/picture.svg" alt="" class="work__icon">
-								<h3 class="work__title">Creatively designed</h3>
-								<div class="work__sub-title">Lorem ipsum dolor sit</div>
-							</div>
-						</a>
-					</li>
-					<li class="work__item">
-						<a href="#" class="work__link">
-							<img src="./img/work-2.jpg" alt="" class="work__img">
-							<div class="work__content">
-								<img src="./img/picture.svg" alt="" class="work__icon">
-								<h3 class="work__title">Creatively designed</h3>
-								<div class="work__sub-title">Lorem ipsum dolor sit</div>
-							</div>
-						</a>
-					</li>
-					<li class="work__item">
-						<a href="#" class="work__link">
-							<img src="./img/work-3.jpg" alt="" class="work__img">
-							<div class="work__content">
-								<img src="./img/picture.svg" alt="" class="work__icon">
-								<h3 class="work__title">Creatively designed</h3>
-								<div class="work__sub-title">Lorem ipsum dolor sit</div>
-							</div>
-						</a>
-					</li>
-					<li class="work__item">
-						<a href="#" class="work__link">
-							<img src="./img/work-4.jpg" alt="" class="work__img">
-							<div class="work__content">
-								<img src="./img/picture.svg" alt="" class="work__icon">
-								<h3 class="work__title">Creatively designed</h3>
-								<div class="work__sub-title">Lorem ipsum dolor sit</div>
-							</div>
-						</a>
-					</li>
-					<li class="work__item">
-						<a href="#" class="work__link">
-							<img src="./img/work-5.jpg" alt="" class="work__img">
-							<div class="work__content">
-								<img src="./img/picture.svg" alt="" class="work__icon">
-								<h3 class="work__title">Creatively designed</h3>
-								<div class="work__sub-title">Lorem ipsum dolor sit</div>
-							</div>
-						</a>
-					</li>
-					<li class="work__item">
-						<a href="#" class="work__link">
-							<img src="./img/work-6.jpg" alt="" class="work__img">
-							<div class="work__content">
-								<img src="./img/picture.svg" alt="" class="work__icon">
-								<h3 class="work__title">Creatively designed</h3>
-								<div class="work__sub-title">Lorem ipsum dolor sit</div>
-							</div>
-						</a>
-					</li>
-				</ul>
+			<ul class="works__list">
+				<li class="works__listItem">
+					<a href="#" class="works__itemLink">
+						<img src="./img/works-img-1.jpg" class="works__itemImg">
+						<div class="works__itemContent">
+							<svg class="works__itemIcon iconSVG" viewBox="0 0 35 35">
+								<use xlink:href="./img/icons.svg#picture"/>
+							</svg>
+							<h3 class="works__itemTitle">Creatively designed</h3>
+							<div class="works__itemSubTitle">Lorem ipsum dolor sit</div>
+						</div>
+					</a>
+				</li>
+				<li class="works__listItem">
+					<a href="#" class="works__itemLink">
+						<img src="./img/works-img-2.jpg" class="works__itemImg">
+						<div class="works__itemContent">
+							<svg class="works__itemIcon iconSVG" viewBox="0 0 35 35">
+								<use xlink:href="./img/icons.svg#picture"/>
+							</svg>
+							<h3 class="works__itemTitle">Creatively designed</h3>
+							<div class="works__itemSubTitle">Lorem ipsum dolor sit</div>
+						</div>
+					</a>
+				</li>
+				<li class="works__listItem">
+					<a href="#" class="works__itemLink">
+						<img src="./img/works-img-3.jpg" class="works__itemImg">
+						<div class="works__itemContent">
+							<svg class="works__itemIcon iconSVG" viewBox="0 0 35 35">
+								<use xlink:href="./img/icons.svg#picture"/>
+							</svg>
+							<h3 class="works__itemTitle">Creatively designed</h3>
+							<div class="works__itemSubTitle">Lorem ipsum dolor sit</div>
+						</div>
+					</a>
+				</li>
+				<li class="works__listItem">
+					<a href="#" class="works__itemLink">
+						<img src="./img/works-img-4.jpg" class="works__itemImg">
+						<div class="works__itemContent">
+							<svg class="works__itemIcon iconSVG" viewBox="0 0 35 35">
+								<use xlink:href="./img/icons.svg#picture"/>
+							</svg>
+							<h3 class="works__itemTitle">Creatively designed</h3>
+							<div class="works__itemSubTitle">Lorem ipsum dolor sit</div>
+						</div>
+					</a>
+				</li>
+				<li class="works__listItem">
+					<a href="#" class="works__itemLink">
+						<img src="./img/works-img-5.jpg" class="works__itemImg">
+						<div class="works__itemContent">
+							<svg class="works__itemIcon iconSVG" viewBox="0 0 35 35">
+								<use xlink:href="./img/icons.svg#picture"/>
+							</svg>
+							<h3 class="works__itemTitle">Creatively designed</h3>
+							<div class="works__itemSubTitle">Lorem ipsum dolor sit</div>
+						</div>
+					</a>
+				</li>
+				<li class="works__listItem">
+					<a href="#" class="works__itemLink">
+						<img src="./img/works-img-6.jpg" class="works__itemImg">
+						<div class="works__itemContent">
+							<svg class="works__itemIcon iconSVG" viewBox="0 0 35 35">
+								<use xlink:href="./img/icons.svg#picture"/>
+							</svg>
+							<h3 class="works__itemTitle">Creatively designed</h3>
+							<div class="works__itemSubTitle">Lorem ipsum dolor sit</div>
+						</div>
+					</a>
+				</li>
+			</ul>
 		</section>
 		<section class="reviews">
-			<div class="wrapper">
+			<div class="passageWrapper">
 				<ul class="reviews__list js-reviews__list owl-carousel">
-					<li class="reviews__item">
-						<div class="reviews__item-icon-wrapper">
-							<img src="./img/user-img.jpg" alt="" class="reviews__item-icon">
+					<li class="reviews__listItem">
+						<div class="reviews__itemImgWrapper">
+							<img src="./img/userImg1.jpg" alt="" class="reviews__itemImg">
 						</div>
-						<div class="reviews__item-content">
-							<p class="reviews__item-text">
+						<div class="reviews__itemTextWrapper">
+							<p class="reviews__itemText">
 								“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
 							</p>
-							<div class="reviews__item-author">Joshua Earle</div>
+							<div class="reviews__itemTitle">Joshua Earle</div>
 						</div>
 					</li>
-					<li class="reviews__item">
-						<div class="reviews__item-icon-wrapper">
-							<img src="./img/user-img.jpg" alt="" class="reviews__item-icon">
+					<li class="reviews__listItem">
+						<div class="reviews__itemImgWrapper">
+							<img src="./img/userImg2.jpg" alt="" class="reviews__itemImg">
 						</div>
-						<div class="reviews__item-content">
-							<p class="reviews__item-text">
-								“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+						<div class="reviews__itemTextWrapper">
+							<p class="reviews__itemText">
+								“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non porro placeat illo magni eveniet minima dolorum, doloremque vitae ipsa voluptas ratione, et minus laudantium itaque harum architecto quisquam magnam molestiae.”
 							</p>
-							<div class="reviews__item-author">Joshua Earle</div>
+							<div class="reviews__itemTitle">Andrew Carr</div>
 						</div>
 					</li>
-					<li class="reviews__item">
-						<div class="reviews__item-icon-wrapper">
-							<img src="./img/user-img.jpg" alt="" class="reviews__item-icon">
+					<li class="reviews__listItem">
+						<div class="reviews__itemImgWrapper">
+							<img src="./img/userImg3.jpg" alt="" class="reviews__itemImg">
 						</div>
-						<div class="reviews__item-content">
-							<p class="reviews__item-text">
-								“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+						<div class="reviews__itemTextWrapper">
+							<p class="reviews__itemText">
+								“Ad, provident porro perspiciatis iure illum excepturi, dolor suscipit vel quaerat eveniet debitis non placeat maiores, voluptas ipsum possimus minima tempora neque.”
 							</p>
-							<div class="reviews__item-author">Joshua Earle</div>
+							<div class="reviews__itemTitle">Harriet Neville</div>
 						</div>
 					</li>
 				</ul>
 			</div>
 		</section>
 		<section class="clients">
-			<div class="wrapper">
-				<div class="section-title-wrapper">
-					<div class="section-sub-title">Happy Clients</div>
-					<h2 class="section-title">What people say</h2>			
+			<div class="sectionWrapper">
+				<div class="sectionTitleContainer">
+					<div class="sectionSubTitle">Happy Clients</div>
+					<h2 class="sectionTitle">What people say</h2>
 				</div>
 				<ul class="clients__list">
-					<li class="clients__item">
-						<div class="clients__item-img-wrapper">
-							<img src="./img/user-img.jpg" class="clients__item-img">
+					<li class="clients__listItem">
+						<div class="clients__itemImgWrapper">
+							<img src="./img/clientsImg1.jpg" class="clients__itemImg">
 						</div>
-						<div class="clients__item-content">
-							<h3 class="clients__item-name">Nick Karvounis</h3>
-							<div class="clients__item-profession">Graphic Design</div>
-							<p class="clients__item-text">
+						<div class="clients__itemTextWrapper">
+							<h3 class="clients__itemTitle">Nick Karvounis</h3>
+							<div class="clients__itemSubTitle">Graphic Design</div>
+							<p class="clients__itemText">
 								Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 							</p>
 						</div>
 					</li>
-					<li class="clients__item">
-						<div class="clients__item-img-wrapper">
-							<img src="./img/user-img.jpg" class="clients__item-img">
+					<li class="clients__listItem">
+						<div class="clients__itemImgWrapper">
+							<img src="./img/clientsImg2.jpg" class="clients__itemImg">
 						</div>
-						<div class="clients__item-content">
-							<h3 class="clients__item-name">Jaelynn Castillo </h3>
-							<div class="clients__item-profession">Graphic Design</div>
-							<p class="clients__item-text">
+						<div class="clients__itemTextWrapper">
+							<h3 class="clients__itemTitle">Mike Petrucci</h3>
+							<div class="clients__itemSubTitle">Graphic Design</div>
+							<p class="clients__itemText">
 								Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 							</p>
 						</div>
 					</li>
-					<li class="clients__item">
-						<div class="clients__item-img-wrapper">
-							<img src="./img/user-img.jpg" class="clients__item-img">
+					<li class="clients__listItem">
+						<div class="clients__itemImgWrapper">
+							<img src="./img/clientsImg3.jpg" class="clients__itemImg">
 						</div>
-						<div class="clients__item-content">
-							<h3 class="clients__item-name">Mike Petrucci</h3>
-							<div class="clients__item-profession">Graphic Design</div>
-							<p class="clients__item-text">
+						<div class="clients__itemTextWrapper">
+							<h3 class="clients__itemTitle">Jaelynn Castillo</h3>
+							<div class="clients__itemSubTitle">Graphic Design</div>
+							<p class="clients__itemText">
 								Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
 							</p>
 						</div>
 					</li>
-					<li class="clients__item">
-						<div class="clients__item-img-wrapper">
-							<img src="./img/user-img.jpg" class="clients__item-img">
+					<li class="clients__listItem">
+						<div class="clients__itemImgWrapper">
+							<img src="./img/clientsImg4.jpg" class="clients__itemImg">
 						</div>
-						<div class="clients__item-content">
-							<h3 class="clients__item-name">Matthew Dix</h3>
-							<div class="clients__item-profession">Graphic Design</div>
-							<p class="clients__item-text">
+						<div class="clients__itemTextWrapper">
+							<h3 class="clients__itemTitle">Matthew Dix</h3>
+							<div class="clients__itemSubTitle">Graphic Design</div>
+							<p class="clients__itemText">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
 							</p>
 						</div>
@@ -588,80 +668,74 @@
 			</div>
 		</section>
 		<section class="blog">
-			<div class="wrapper">
-				<div class="section-title-wrapper">
-					<div class="section-sub-title">Our stories</div>
-					<h2 class="section-title">Latest blog</h2>			
+			<div class="sectionWrapper">
+				<div class="sectionTitleContainer">
+					<div class="sectionSubTitle">Our stories</div>
+					<h2 class="sectionTitle">Latest blog</h2>
 				</div>
 				<ul class="blog__list">
-					<li class="blog__item">
-						<div class="blog__item-img-wrapper">
-							<img src="./img/blog-img-1.jpg" alt="" class="blog__item-img">
-							<a href="#" class="blog__item-date">
-								<div class="blog__item-date-day">15</div>
-								<div class="blog__item-date-month">Jan</div>
-							</a>
-						</div>
-						<h3 class="blog__item-title">Lorem ipsum dolor sit amet</h3>
-						<p class="blog__item-text">
-							Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-						<ul class="blog__activity-list">
-							<li class="blog__activity-item">
-								<i class="fa fa-eye" aria-hidden="true"></i>
-								<span class="blog__activity-item-value">542</span>
-							</li>
-							<li class="blog__activity-item">
-								<i class="fa fa-commenting" aria-hidden="true"></i>
-								<span class="blog__activity-item-value">17</span>
-							</li>
-						</ul>
+					<li class="blog__listItem">
+						<a href="#" class="blog__itemLink">
+							<div class="blog__itemImgWrapper">
+								<picture>
+									<source media="(min-width: 769px)" srcset="./img/blogImg1-sm.jpg">
+									<source media="(min-width: 480px)" srcset="./img/blogImg1-md.jpg">
+									<img src="./img/blogImg1-sm.jpg" alt="Girl at the table" class="blog__itemImg">
+								</picture>
+								<div class="blog__itemDate">
+									<div class="blog__itemDay">15</div>
+									<div class="blog__itemMonth">Jan</div>
+								</div>
+							</div>
+							<h3 class="blog__itemTitle">Lorem ipsum dolor sit amet</h3>
+							<p class="blog__itemText">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<ul class="blog__activityList">
+								<li class="blog__activityItem"><i class="fa fa-eye" aria-hidden="true"></i> 642</li>
+								<li class="blog__activityItem"><i class="fa fa-commenting" aria-hidden="true"></i> 17</li>
+							</ul>
+						</a>
 					</li>
-					<li class="blog__item">
-						<div class="blog__item-img-wrapper">
-							<img src="./img/blog-img-2.jpg" alt="" class="blog__item-img">
-							<a href="#" class="blog__item-date">
-								<div class="blog__item-date-day">14</div>
-								<div class="blog__item-date-month">Jan</div>
-							</a>
-						</div>
-						<h3 class="blog__item-title">Sed do eiusmod tempor</h3>
-						<p class="blog__item-text">
-							Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-						<ul class="blog__activity-list">
-							<li class="blog__activity-item">
-								<i class="fa fa-eye" aria-hidden="true"></i>
-								<span class="blog__activity-item-value">992</span>
-							</li>
-							<li class="blog__activity-item">
-								<i class="fa fa-commenting" aria-hidden="true"></i>
-								<span class="blog__activity-item-value">42</span>
-							</li>
-						</ul>
+					<li class="blog__listItem">
+						<a href="#" class="blog__itemLink">
+							<div class="blog__itemImgWrapper">
+								<picture>
+									<source media="(min-width: 769px)" srcset="./img/blogImg2-sm.jpg">
+									<source media="(min-width: 480px)" srcset="./img/blogImg2-md.jpg">
+									<img src="./img/blogImg2-sm.jpg" alt="Girl at the table" class="blog__itemImg">
+								</picture>
+								<div class="blog__itemDate">
+									<div class="blog__itemDay">15</div>
+									<div class="blog__itemMonth">Jan</div>
+								</div>
+							</div>
+							<h3 class="blog__itemTitle">Sed do eiusmod tempor</h3>
+							<p class="blog__itemText">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<ul class="blog__activityList">
+								<li class="blog__activityItem"><i class="fa fa-eye" aria-hidden="true"></i> 992</li>
+								<li class="blog__activityItem"><i class="fa fa-commenting" aria-hidden="true"></i> 42</li>
+							</ul>
+						</a>
 					</li>
-					<li class="blog__item">
-						<div class="blog__item-img-wrapper">
-							<img src="./img/blog-img-3.jpg" alt="" class="blog__item-img">
-							<a href="#" class="blog__item-date">
-								<div class="blog__item-date-day">12</div>
-								<div class="blog__item-date-month">Jan</div>
-							</a>
-						</div>
-						<h3 class="blog__item-title">Incididunt ut labore et dolore</h3>
-						<p class="blog__item-text">
-							Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-						<ul class="blog__activity-list">
-							<li class="blog__activity-item">
-								<i class="fa fa-eye" aria-hidden="true"></i>
-								<span class="blog__activity-item-value">1560</span>
-							</li>
-							<li class="blog__activity-item">
-								<i class="fa fa-commenting" aria-hidden="true"></i>
-								<span class="blog__activity-item-value">98</span>
-							</li>
-						</ul>
+					<li class="blog__listItem">
+						<a href="#" class="blog__itemLink">
+							<div class="blog__itemImgWrapper">
+								<picture>
+									<source media="(min-width: 769px)" srcset="./img/blogImg3-sm.jpg">
+									<source media="(min-width: 480px)" srcset="./img/blogImg3-md.jpg">
+									<img src="./img/blogImg3-sm.jpg" alt="Girl at the table" class="blog__itemImg">
+								</picture>
+								<div class="blog__itemDate">
+									<div class="blog__itemDay">12</div>
+									<div class="blog__itemMonth">Jan</div>
+								</div>
+							</div>
+							<h3 class="blog__itemTitle">Incididunt ut labore et dolore</h3>
+							<p class="blog__itemText">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<ul class="blog__activityList">
+								<li class="blog__activityItem"><i class="fa fa-eye" aria-hidden="true"></i> 1560</li>
+								<li class="blog__activityItem"><i class="fa fa-commenting" aria-hidden="true"></i> 98</li>
+							</ul>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -670,154 +744,138 @@
 	</main>
 
 	<footer class="footer">
-		<div class="wrapper">
+		<div class="passageWrapper">
 			<ul class="footer__list">
-				<li class="footer__item">
-					<a href="#" class="footer__title-link block">
-						<h2 class="footer__title-logo">MoGo</h2>
-					</a>
+				<li class="footer__listItem footer__listItem__main">
+					<h2 class="footer__title"><a href="#" class="footer__link">MoGo</a></h2>
 					<p class="footer__text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quod aspernatur, natus. Quaerat ipsa beatae quisquam eius officia? Doloremque autem facere eligendi harum nobis corporis iste, quis temporibus itaque doloribus!
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 					</p>
-					<div class="footer__followers-value"><span class="footer__followers-value__bold">15k</span> followers</div>
-					<ul class="footer__social-list">
-						<li class="footer__social-item">
-							<a href="#" class="footer__social-link">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-							</a>
+					<h3 class="footer__socialListTitle"><span class="footer__socialListTitle__value">15k</span> followers</h3>
+					<ul class="footer__socialList">
+						<li class="footer__socialItem">
+							<a href="#" class="footer__socialLink"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 						</li>
-						<li class="footer__social-item">
-							<a href="#" class="footer__social-link">
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-							</a>
+						<li class="footer__socialItem">
+							<a href="#" class="footer__socialLink"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 						</li>
-						<li class="footer__social-item">
-							<a href="#" class="footer__social-link">
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-							</a>
+						<li class="footer__socialItem">
+							<a href="#" class="footer__socialLink"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 						</li>
-						<li class="footer__social-item">
-							<a href="#" class="footer__social-link">
-								<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-							</a>
+						<li class="footer__socialItem">
+							<a href="#" class="footer__socialLink"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
 						</li>
-						<li class="footer__social-item">
-							<a href="#" class="footer__social-link">
-								<i class="fa fa-google-plus" aria-hidden="true"></i>
-							</a>
+						<li class="footer__socialItem">
+							<a href="#" class="footer__socialLink"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 						</li>
-						<li class="footer__social-item">
-							<a href="#" class="footer__social-link">
-								<i class="fa fa-youtube-play" aria-hidden="true"></i>
-							</a>
+						<li class="footer__socialItem">
+							<a href="#" class="footer__socialLink"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
 						</li>
-						<li class="footer__social-item">
-							<a href="#" class="footer__social-link">
-								<i class="fa fa-dribbble" aria-hidden="true"></i>
-							</a>
+						<li class="footer__socialItem">
+							<a href="#" class="footer__socialLink"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
 						</li>
-						<li class="footer__social-item">
-							<a href="#" class="footer__social-link">
-								<i class="fa fa-tumblr" aria-hidden="true"></i>
-							</a>
+						<li class="footer__socialItem">
+							<a href="#" class="footer__socialLink"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
 						</li>
 					</ul>
 					<form action="#" class="footer__form">
-						<input type="email" class="footer__form-item footer__form-item__field" placeholder="Your Email...">
-						<input type="button" class="footer__form-item footer__form-item__button" value="Subscribe">
+						<input type="email" class="footer__formItem" placeholder="Your Email...">
+						<input type="button" class="footer__formButton" value="Subscribe">
 					</form>
 				</li>
-				<li class="footer__item footer__sub-item">
-					<h3 class="footer__title">Blogs</h3>
-					<ul class="footer__blog-list">
-						<li class="footer__blog-item">
-							<a href="#" class="footer__blog-link">
-								<img src="./img/footer-blog-img-1.jpg" alt="" class="footer__blog-img">
-								<div class="footer__blog-title-wrapper">
-									<h4 class="footer__blog-title">Lorem ipsum dolor sit amet, consectetur adipiscing</h4>
-									<div class="footer__blog-date">Jan 9, 2016</div>
+				<li class="footer__listItem footer__listItem__sub">
+					<h3 class="footer__itemTitle">Blogs</h3>
+					<ul class="footer__blogList">
+						<li class="footer__blogItem">
+							<a href="#" class="footer__blogLink">
+								<div class="footer__blogImgWrapper">
+									<img src="./img/footer-blog-img-1.jpg" alt="" class="footer__blogImg">
+								</div>
+								<div class="footer__blogTextWrapper">
+									<h4 class="footer__blogTitle">Lorem ipsum dolor sit amet, consectetur adipiscing</h4>
+									<div class="footer__blogSubTitle">Jan 9, 2016</div>
 								</div>
 							</a>
 						</li>
-						<li class="footer__blog-item">
-							<a href="#" class="footer__blog-link">
-								<img src="./img/footer-blog-img-2.jpg" alt="" class="footer__blog-img">
-								<div class="footer__blog-title-wrapper">
-									<h4 class="footer__blog-title">Consectetur adipiscing elit, sed do eiusmod tempor</h4>
-									<div class="footer__blog-date">Jan 9, 2016</div>
+						<li class="footer__blogItem">
+							<a href="#" class="footer__blogLink">
+								<div class="footer__blogImgWrapper">
+									<img src="./img/footer-blog-img-1.jpg" alt="" class="footer__blogImg">
+								</div>
+								<div class="footer__blogTextWrapper">
+									<h4 class="footer__blogTitle">Consectetur adipiscing elit, sed do eiusmod tempor</h4>
+									<div class="footer__blogSubTitle">Jan 9, 2016</div>
 								</div>
 							</a>
 						</li>
-						<li class="footer__blog-item">
-							<a href="#" class="footer__blog-link">
-								<img src="./img/footer-blog-img-3.jpg" alt="" class="footer__blog-img">
-								<div class="footer__blog-title-wrapper">
-									<h4 class="footer__blog-title">Sed do eiusmod tempor incididunt ut labore</h4>
-									<div class="footer__blog-date">Jan 9, 2016</div>
+						<li class="footer__blogItem">
+							<a href="#" class="footer__blogLink">
+								<div class="footer__blogImgWrapper">
+									<img src="./img/footer-blog-img-1.jpg" alt="" class="footer__blogImg">
+								</div>
+								<div class="footer__blogTextWrapper">
+									<h4 class="footer__blogTitle">Sed do eiusmod tempor incididunt ut labore</h4>
+									<div class="footer__blogSubTitle">Jan 9, 2016</div>
 								</div>
 							</a>
 						</li>
 					</ul>
 				</li>
-				<li class="footer__item">
-					<h3 class="footer__title">Instagram</h3>
-					<ul class="footer__instagram-gallery">
-						<li class="footer__instagram-gallery-item">
-							<a href="#" class="footer__instagram-gallery-link">
-								<img src="./img/instagram-gallery-1.jpg" alt="" class="footer__instagram-gallery-img">
+				<li class="footer__listItem footer__listItem__sub">
+					<h3 class="footer__itemTitle">Instagram</h3>
+					<ul class="footer__galleryList">
+						<li class="footer__galleryItem">
+							<a href="#" class="footer__galleryLink">
+								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
-						<li class="footer__instagram-gallery-item">
-							<a href="#" class="footer__instagram-gallery-link">
-								<img src="./img/instagram-gallery-2.jpg" alt="" class="footer__instagram-gallery-img">
+						<li class="footer__galleryItem">
+							<a href="#" class="footer__galleryLink">
+								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
-						<li class="footer__instagram-gallery-item">
-							<a href="#" class="footer__instagram-gallery-link">
-								<img src="./img/instagram-gallery-3.jpg" alt="" class="footer__instagram-gallery-img">
+						<li class="footer__galleryItem">
+							<a href="#" class="footer__galleryLink">
+								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
-						<li class="footer__instagram-gallery-item">
-							<a href="#" class="footer__instagram-gallery-link">
-								<img src="./img/instagram-gallery-4.jpg" alt="" class="footer__instagram-gallery-img">
+						<li class="footer__galleryItem">
+							<a href="#" class="footer__galleryLink">
+								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
-						<li class="footer__instagram-gallery-item">
-							<a href="#" class="footer__instagram-gallery-link">
-								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__instagram-gallery-img">
+						<li class="footer__galleryItem">
+							<a href="#" class="footer__galleryLink">
+								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
-						<li class="footer__instagram-gallery-item">
-							<a href="#" class="footer__instagram-gallery-link">
-								<img src="./img/instagram-gallery-6.jpg" alt="" class="footer__instagram-gallery-img">
+						<li class="footer__galleryItem">
+							<a href="#" class="footer__galleryLink">
+								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
-						<li class="footer__instagram-gallery-item">
-							<a href="#" class="footer__instagram-gallery-link">
-								<img src="./img/instagram-gallery-7.jpg" alt="" class="footer__instagram-gallery-img">
+						<li class="footer__galleryItem">
+							<a href="#" class="footer__galleryLink">
+								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
-						<li class="footer__instagram-gallery-item">
-							<a href="#" class="footer__instagram-gallery-link">
-								<img src="./img/instagram-gallery-8.jpg" alt="" class="footer__instagram-gallery-img">
+						<li class="footer__galleryItem">
+							<a href="#" class="footer__galleryLink">
+								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
-						<li class="footer__instagram-gallery-item">
-							<a href="#" class="footer__instagram-gallery-link">
-								<img src="./img/instagram-gallery-9.jpg" alt="" class="footer__instagram-gallery-img">
+						<li class="footer__galleryItem">
+							<a href="#" class="footer__galleryLink">
+								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
 					</ul>
-					<a href="#" class="footer__instagram-link">View more photos</a>
+					<a href="#" class="footer__itemLink">View more photos</a>
 				</li>
 			</ul>
-			<div class="footer__copyrights">
-				&copy; 2016 MoGo free PSD template by <a href="#" class="footer__copyrights-link">Laaqiq</a>
-			</div>
 		</div>
+		<div class="footer__copyrights">&copy; 2016 MoGo free PSD template by <a href="#" class="footer__copyrightsLink">Laaqiq</a></div>
 	</footer>
-
-
 
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
