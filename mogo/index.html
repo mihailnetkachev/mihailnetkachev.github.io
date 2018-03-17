@@ -38,21 +38,21 @@
 			<a href="#" class="header__menuButton undisplayed">
 				<i class="fa fa-bars" aria-hidden="true"></i>
 			</a>
-			<ul class="header__menuList">
+			<ul class="header__menuList undisplayed">
 				<li class="header__menuItem">
-					<a href="#" class="header__menuLink">About</a>
+					<a href="#" id="about-link" class="header__menuLink js-header__menuLink">About</a>
 				</li>
 				<li class="header__menuItem">
-					<a href="#" class="header__menuLink">Service</a>
+					<a href="#" id="services-link" class="header__menuLink js-header__menuLink">Service</a>
 				</li>
 				<li class="header__menuItem">
-					<a href="#" class="header__menuLink">Work</a>
+					<a href="#" id="team-link" class="header__menuLink js-header__menuLink">Team</a>
 				</li>
 				<li class="header__menuItem">
-					<a href="#" class="header__menuLink">Blog</a>
+					<a href="#" id="works-link" class="header__menuLink js-header__menuLink">Work</a>
 				</li>
 				<li class="header__menuItem">
-					<a href="#" class="header__menuLink">Contacts</a>
+					<a href="#" id="blog-link" class="header__menuLink js-header__menuLink">Blog</a>
 				</li>
 				<li class="header__menuItem header__menuItem__withoutLine">
 					<a href="#" class="header__menuLink">
@@ -79,11 +79,11 @@
 							<span class="block">to MoGo</span>
 						</h2>
 					</div>
-					<a href="#" class="topBanner__button">Learn more</a>
+					<a href="#" class="topBanner__button js-topBanner__button">Learn more</a>
 				</div>
 			</div>
 		</section>
-		<section class="about">
+		<section class="about" id="about">
 			<div class="sectionWrapper">
 				<div class="sectionTitleContainer">
 					<div class="sectionSubTitle">What we do</div>
@@ -161,7 +161,7 @@
 				</ul>
 			</div>
 		</div>
-		<section class="services">
+		<section class="services" id="services">
 			<div class="sectionWrapper">
 				<div class="sectionTitleContainer">
 					<div class="sectionSubTitle">We work with</div>
@@ -348,7 +348,7 @@
 				</ul>
 			</div>
 		</div>
-		<section class="team">
+		<section class="team" id="team">
 			<div class="sectionWrapper">
 				<div class="sectionTitleContainer">
 					<div class="sectionSubTitle">Who we are</div>
@@ -484,7 +484,7 @@
 				</ul>
 			</div>
 		</div>
-		<section class="works">
+		<section class="works" id="works">
 			<div class="sectionWrapper">
 				<div class="sectionTitleContainer">
 					<div class="sectionSubTitle">What we do</div>
@@ -672,7 +672,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="blog">
+		<section class="blog" id="blog">
 			<div class="sectionWrapper">
 				<div class="sectionTitleContainer">
 					<div class="sectionSubTitle">Our stories</div>
@@ -788,13 +788,13 @@
 						<input type="button" class="footer__formButton" value="Subscribe">
 					</form>
 				</li>
-				<li class="footer__listItem footer__listItem__sub">
+				<li class="footer__listItem footer__listItem__blog">
 					<h3 class="footer__itemTitle">Blogs</h3>
 					<ul class="footer__blogList">
 						<li class="footer__blogItem">
 							<a href="#" class="footer__blogLink">
 								<div class="footer__blogImgWrapper">
-									<img src="./img/footer-blog-img-1.jpg" alt="" class="footer__blogImg">
+									<img src="./img/footerBlogImg1.jpg" alt="" class="footer__blogImg">
 								</div>
 								<div class="footer__blogTextWrapper">
 									<h4 class="footer__blogTitle">Lorem ipsum dolor sit amet, consectetur adipiscing</h4>
@@ -805,7 +805,7 @@
 						<li class="footer__blogItem">
 							<a href="#" class="footer__blogLink">
 								<div class="footer__blogImgWrapper">
-									<img src="./img/footer-blog-img-1.jpg" alt="" class="footer__blogImg">
+									<img src="./img/footerBlogImg2.jpg" alt="" class="footer__blogImg">
 								</div>
 								<div class="footer__blogTextWrapper">
 									<h4 class="footer__blogTitle">Consectetur adipiscing elit, sed do eiusmod tempor</h4>
@@ -816,7 +816,7 @@
 						<li class="footer__blogItem">
 							<a href="#" class="footer__blogLink">
 								<div class="footer__blogImgWrapper">
-									<img src="./img/footer-blog-img-1.jpg" alt="" class="footer__blogImg">
+									<img src="./img/footerBlogImg3.jpg" alt="" class="footer__blogImg">
 								</div>
 								<div class="footer__blogTextWrapper">
 									<h4 class="footer__blogTitle">Sed do eiusmod tempor incididunt ut labore</h4>
@@ -826,52 +826,52 @@
 						</li>
 					</ul>
 				</li>
-				<li class="footer__listItem footer__listItem__sub">
+				<li class="footer__listItem footer__listItem__gallery">
 					<h3 class="footer__itemTitle">Instagram</h3>
 					<ul class="footer__galleryList">
 						<li class="footer__galleryItem">
 							<a href="#" class="footer__galleryLink">
-								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
+								<img src="./img/galleryImg1.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
 						<li class="footer__galleryItem">
 							<a href="#" class="footer__galleryLink">
-								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
+								<img src="./img/galleryImg2.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
 						<li class="footer__galleryItem">
 							<a href="#" class="footer__galleryLink">
-								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
+								<img src="./img/galleryImg3.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
 						<li class="footer__galleryItem">
 							<a href="#" class="footer__galleryLink">
-								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
+								<img src="./img/galleryImg4.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
 						<li class="footer__galleryItem">
 							<a href="#" class="footer__galleryLink">
-								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
+								<img src="./img/galleryImg5.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
 						<li class="footer__galleryItem">
 							<a href="#" class="footer__galleryLink">
-								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
+								<img src="./img/galleryImg6.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
 						<li class="footer__galleryItem">
 							<a href="#" class="footer__galleryLink">
-								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
+								<img src="./img/galleryImg7.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
 						<li class="footer__galleryItem">
 							<a href="#" class="footer__galleryLink">
-								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
+								<img src="./img/galleryImg8.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
 						<li class="footer__galleryItem">
 							<a href="#" class="footer__galleryLink">
-								<img src="./img/instagram-gallery-5.jpg" alt="" class="footer__galleryImg">
+								<img src="./img/galleryImg9.jpg" alt="" class="footer__galleryImg">
 							</a>
 						</li>
 					</ul>
@@ -881,6 +881,7 @@
 		</div>
 		<div class="footer__copyrights">&copy; 2016 MoGo free PSD template by <a href="#" class="footer__copyrightsLink">Laaqiq</a></div>
 	</footer>
+	<a href="#" class="anchor undisplayed"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
 
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
